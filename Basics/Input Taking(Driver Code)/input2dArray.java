@@ -12,8 +12,8 @@ class Main{
         for(int i=0;i<t;i++){
         int[] x = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int m = x[0];
-        int n = x[0];
-        int k = x[0];
+        int n = x[1];
+        int k = x[2];
         
         List<List<Integer>> mat = new ArrayList<>();
         
@@ -29,13 +29,40 @@ class Main{
         }
     }
     static void solve(List<List<Integer>> arr,int m,int n,int k){
-        
-        for(List<Integer> i:arr){
-            for(int j:i){
-                System.out.print(j+" ");
-            }
+                        
+
+       if(k==1){
+           
+           for(int i=0;i<m;i++){
+          if(i%2==0) {
+               for(int j=0;j<n;j++){
+                   System.out.print(arr.get(i).get(j)+" ");
+               }
+           } 
+          else {
+                for(int j=n-1;j>=0;j--){
+                  System.out.print(arr.get(i).get(j)+" ");
+              }
+          }
+           }
+       }
+       else
+       {
             
-        }
+           for(int i=0;i<m;i++){
+               if(i%2!=0) {
+               for(int j=0;j<n;j++){
+                   System.out.print(arr.get(i).get(j)+" ");
+               }
+           } else {
+                for(int j=n-1;j>=0;j--){
+                   System.out.print(arr.get(i).get(j)+" ");
+               }
+           }
+           }
+           
+           
+       }
     }
     
 }
