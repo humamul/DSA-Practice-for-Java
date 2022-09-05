@@ -13,6 +13,7 @@ class Main{
       int n = Integer.parseInt(br.readLine());
       List<Integer> l1 = Stream.of(br.readLine().trim().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
       solve(l1,n);
+            System.out.println();  // for the line break if you use System.out.print(); in solve method; 
         }
     }
     
