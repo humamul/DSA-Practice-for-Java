@@ -1,4 +1,12 @@
-  public static void main(String[] args) throws IOException{
+ 
+import java.util.*;
+import java.io.*;
+import java.util.stream;
+
+class Main{
+  
+
+public static void main(String[] args) throws IOException{
       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
       String s = br.readLine();
       String[] sarr = s.split(" ");
@@ -20,8 +28,5 @@
             // solve(narr,narr.length);
     }
 
+}
 
-
-import java.util.*;
-import java.io.*;
-import java.util.stream;
