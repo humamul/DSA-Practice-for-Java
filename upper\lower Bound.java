@@ -43,7 +43,7 @@ class Main{
         
         // System.out.println(lb+" "+ub);
         
-        if(ub!=-1)
+        if(true)
         System.out.print(Math.abs(ub-lb)+" ");
         else{
             System.out.print(Math.abs(n-lb)+" ");
@@ -83,7 +83,7 @@ class Main{
                 h=mids-1;
             }
         }
-        return up;
+        return h+1;
     }
     
 }
