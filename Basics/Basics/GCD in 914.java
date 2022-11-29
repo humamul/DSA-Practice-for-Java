@@ -7,7 +7,7 @@
         
         int ans = 0;
         for(Integer i:hm.keySet()){
-            ans  = gcd (ans,hm.get(i));
+            ans  = gcd (ans,hm.get(i));            //  i is the key here
         }
         System.out.println(hm+" "+ans);
         if(ans>1) return true;
