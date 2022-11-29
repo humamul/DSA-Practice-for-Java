@@ -2,6 +2,15 @@
 
 import java.util.*;
 
+
+ HashMap<Integer,Integer> hm = new HashMap<>();                           WILL GIVE THE SAME OUT PUT AS BELOW
+        
+        int n =arr.length;
+        for(int i=0;i<n;i++){
+            hm.put(arr[i],hm.getOrDefault(arr[i],0)+1);
+        }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public class DSAobjectjs {
     public static void main(String[] args) {
         Map<String, Integer> m1 = new HashMap<>();
